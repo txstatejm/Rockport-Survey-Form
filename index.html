@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 id="title">Rockport Survey Form</h1>
+        <p id="description">Thank you for taking the time to help improve Rockport</p>
+      </header>
+      <form id="survey-form">
+        <div>
+          <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div>
+          <label id="email-label">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label id="number-label">Age(optional)</label>
+          <input id="number" type="number" placeholder="Age" min="13" max="120">
+        </div>
+        <div>
+          <p>Which option describes your current role?</p>
+          <select id="dropdown">
+            <option disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full-time Job</option>
+            <option value="part-time-job">Part-time Job</option>
+            <option value="unemployed">Unemployed</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+        <div>
+          <p>Would you recommend Rockport to friends and family?</p>
+          <label>
+            <input name="recommend" value="yes" type="radio" class="input-radio" checked>Yes
+          </label>
+          <label>
+            <input name="recommend" value="no" type="radio" class="input-radio">No
+          </label>
+        </div>
+        <div>
+          <p>What is your favorite part about Rockport?</p>
+            <select>
+              <option selected disabled>Select an option</option>
+              <option value="rockport-beach">Rockport Beach</option>
+              <option value="beach-house">Beach House</option>
+              <option value="food">Food</option>
+              <option value="traffic">Traffic</option>
+              <option value="trump-support">Trump support</option>
+            </select>
+        </div>
+        <div>
+          <p>What could Rockport do to improve your experience?(Check all that apply)</p>
+            <label>
+              <input name="improve" value="improved-rideshare" type="checkbox" >Improved Rideshare
+            </label>
+            <label>
+              <input  name="improve" value="food-delivery" type="checkbox">More Food Delivery options
+            </label>
+            <label>
+              <input  name="improve" value="more-democrats" type="checkbox">More Democrats
+            </label>
+            <label>
+              <input  name="improve" value="cheaper-rent" type="checkbox">Cheaper rent
+            </label>
+            <label>
+              <input  name="improve" value="target" type="checkbox">Build a Target
+            </label>
+        </div>
+        <div>
+          <p>Any comments or suggestions?</p>
+            <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
